@@ -1,0 +1,7 @@
+/version.json
+  Access-Control-Allow-Origin: *
+  Cache-Control: no-store
+
+/*.apk
+  Content-Type: application/vnd.android.package-archive
+  Content-Disposition: attachment
