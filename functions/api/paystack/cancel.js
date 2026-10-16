@@ -49,7 +49,7 @@ export async function onRequestPost(context) {
   const rows = await rowRes.json();
   const row = rows && rows[0];
   if (!row || !row.paystack_subscription_code) {
-    return json({ ok: true, changed: false, message: 'There is no paid subscription to stop.' });
+    return json({ ok: true, changed: false, paid: false, message: 'There is no paid subscription to stop.' });
   }
   if (row.status === 'non_renewing' || row.status === 'cancelled') {
     return json({ ok: true, changed: false, message: 'Renewal is already stopped.' });
