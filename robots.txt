@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://feenix-property.pages.dev/sitemap.xml
